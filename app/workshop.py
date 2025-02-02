@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 from flask import request as Request
+from flask_cors import CORS
 from dotenv import load_dotenv
 # import requests
 import os
@@ -15,6 +16,7 @@ BACK_KEY = os.environ.get("BACK_KEY")
 EXPIRATION = 60 * 30
 
 app = Flask(__name__)
+CORS(app)
 
 while True:
     try:

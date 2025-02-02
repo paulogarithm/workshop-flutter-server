@@ -3,3 +3,4 @@ python-dotenv
 requests
 psycopg2
 pyjwt
+flask-cors
